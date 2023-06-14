@@ -15,7 +15,7 @@ function renderNotes() {
         noteCard.classList.add("note")
         noteCard.innerHTML = `<h3>${note.title}</h3><p>${note.content}</p>
         <button  onclick="editNote(${index})" >edit</button>
-        <button  onclick="deleteNote(${index})" >delete</button>
+        <button  onclick="deleteNote(${index})" ><i class="fa-sharp fa-solid fa-trash"></i></button>
         `
         notesContainer.appendChild(noteCard)
     })
